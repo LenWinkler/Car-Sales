@@ -4,6 +4,7 @@ import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
+import { dispatch } from 'rxjs/internal/observable/range';
 
 const App = () => {
   const state = {
@@ -29,6 +30,7 @@ const App = () => {
 
   const buyItem = item => {
     // dipsatch an action here to add an item
+    // dispatch({ type: 'ADD_FEATURE' payload: })
   };
 
   return (
