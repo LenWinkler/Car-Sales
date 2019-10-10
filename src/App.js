@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from "react-redux";
+import { ADD_FEATURE, REMOVE_FEATURE } from "./actions/actions";
  
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
@@ -27,11 +28,19 @@ const App = (props) => {
 
   const removeFeature = item => {
     // dispatch an action here to remove an item
+    dispatch({
+      type: REMOVE_FEATURE,
+      payload: item.id
+    })
   };
 
   const buyItem = item => {
     // dipsatch an action here to add an item
     // dispatch({ type: 'ADD_FEATURE' payload: })
+    dispatch({
+      type: ADD_FEATURE,
+      payload: item.id
+    })
   };
 
   return (

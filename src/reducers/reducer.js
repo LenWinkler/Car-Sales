@@ -1,4 +1,5 @@
 
+
 const initialState = {
     additionalPrice: 0,
     car: {
@@ -21,7 +22,11 @@ console.log(initialState);
 const reducer = (state = initialState, action) => {
     console.log(action, state);
     switch (action.type) {
-        
+      // case 'ADD_FEATURE':
+      //   let newFeature = {
+          
+      //   }
+
             default: 
             return state;
     }
