@@ -5,15 +5,15 @@ import { connect } from "react-redux";
 const Total = props => {
   return (
     <div className="content">
-      <h4>Total Amount: ${props.car.price + props.additionalPrice}</h4>
+      <h4>Total Amount: ${props.price + props.additionalPrice}</h4>
     </div>
   );
 };
 
-mapStateToProps = state => {
+const mapStateToProps = state => {
   return {
-    price: props.car.price,
-    additionalPrice: props.additionalPrice
+    price: state.car.price,
+    additionalPrice: state.additionalPrice
   }
 }
 
