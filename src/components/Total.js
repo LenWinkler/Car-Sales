@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 
 const Total = props => {
+  console.log('totalprops', props)
   return (
     <div className="content">
       <h4>Total Amount: ${props.price + props.additionalPrice}</h4>
